@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "427407662170",
+    "project_id": "crevolutionattendance",
+    "storage_bucket": "crevolutionattendance.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:427407662170:android:947a17bd6376e9ce3ccc63",
+        "android_client_info": {
+          "package_name": "com.example.crevolutionattendance"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcZVNKLbeKTU1BLJSN6HlD8eG5dVY-CZM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/createAccount"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateAccountActivity">
+
+    <ImageView
+        android:id="@+id/returnButton"
+        android:layout_width="161dp"
+        android:layout_height="144dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.649"
+        app:layout_constraintStart_toEndOf="@+id/createAccountTitle"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.048"
+        app:srcCompat="@android:drawable/ic_menu_revert"
+        app:tint="#D4AF37" />
+
+    <TextView
+        android:id="@+id/createAccountTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="Create Account"
+        android:textSize="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.084" />
+
+    <EditText
+        android:id="@+id/createAccountUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="104dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-black"
+        android:hint="Username"
+        android:inputType="text"
+        android:textSize="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.499"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createAccountTitle" />
+
+    <EditText
+        android:id="@+id/createAccountPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="sans-serif-black"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/createAccountButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createAccountUsername"
+        app:layout_constraintVertical_bias="0.501" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/createAccountButton"
+        android:layout_width="350dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="236dp"
+        android:backgroundTint="#D4AF37"
+        android:fontFamily="sans-serif-black"
+        android:text="Create Account"
+        android:textColor="@android:color/white"
+        android:textSize="40sp"
+        app:cornerRadius="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.329"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createAccountUsername"
+        app:layout_constraintVertical_bias="0.865" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,13 +7,65 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:id="@+id/returnButton"
+        android:layout_width="161dp"
+        android:layout_height="144dp"
+        app:tint="#D4AF37"
+        app:layout_constraintBottom_toTopOf="@+id/clockOutButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.542"
+        app:layout_constraintStart_toEndOf="@+id/welcomeText"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.347"
+        app:srcCompat="@android:drawable/ic_menu_revert" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/clockOutButton"
+        android:layout_width="442dp"
+        android:layout_height="200dp"
+        android:backgroundTint="#D4AF37"
+        android:text="Clock Out"
+        android:textColor="@android:color/white"
+        android:textSize="60sp"
+        app:cornerRadius="24dp"
+        android:fontFamily="sans-serif-black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.866"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:id="@+id/welcomeText"
+        android:layout_width="469dp"
+        android:layout_height="130dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Welcome"
+        android:textAlignment="center"
+        android:textSize="60sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.126" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/clockInButton"
+        android:layout_width="442dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="136dp"
+        android:backgroundTint="#D4AF37"
+        android:fontFamily="sans-serif-black"
+        android:text="Clock In"
+        android:textColor="@android:color/white"
+        android:textSize="60sp"
+        app:cornerRadius="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/clockOutButton"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
