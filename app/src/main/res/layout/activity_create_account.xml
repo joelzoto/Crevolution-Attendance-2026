@@ -34,34 +34,60 @@
         app:layout_constraintVertical_bias="0.084" />
 
     <EditText
-        android:id="@+id/createAccountUsername"
+        android:id="@+id/pinNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="104dp"
+        android:layout_marginStart="405dp"
+        android:layout_marginEnd="405dp"
+        android:layout_marginBottom="244dp"
         android:ems="10"
         android:fontFamily="sans-serif-black"
-        android:hint="Username"
-        android:inputType="text"
+        android:hint="PIN"
+        android:inputType="numberPassword"
         android:textSize="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.499"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/createAccountTitle" />
+        app:layout_constraintTop_toBottomOf="@id/lastName"
+        app:layout_constraintVertical_bias="0.25"/>
 
     <EditText
-        android:id="@+id/createAccountPassword"
+        android:id="@+id/firstName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="405dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginEnd="405dp"
         android:ems="10"
         android:fontFamily="sans-serif-black"
-        android:hint="Password"
-        android:inputType="textPassword"
+        android:hint="First Name"
+        android:inputType="text"
         android:textSize="40dp"
-        app:layout_constraintBottom_toTopOf="@+id/createAccountButton"
+        app:layout_constraintBottom_toTopOf="@+id/lastName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/createAccountUsername"
-        app:layout_constraintVertical_bias="0.501" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25"/>
+
+    <EditText
+        android:id="@+id/lastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="405dp"
+        android:layout_marginEnd="405dp"
+        android:layout_marginBottom="28dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-black"
+        android:hint="Last Name"
+        android:inputType="text"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/pinNumber"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/firstName"
+        app:layout_constraintVertical_bias="0.25" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/createAccountButton"
@@ -78,6 +104,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.329"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/createAccountUsername"
+        app:layout_constraintTop_toBottomOf="@+id/pinNumber"
         app:layout_constraintVertical_bias="0.865" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -21,34 +21,21 @@
         app:layout_constraintVertical_bias="0.084" />
 
     <EditText
-        android:id="@+id/signInUsername"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
-        android:ems="10"
-        android:fontFamily="sans-serif-black"
-        android:hint="Username"
-        android:inputType="text"
-        android:textSize="40dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/signInTitle" />
-
-    <EditText
-        android:id="@+id/signInPassword"
+        android:id="@+id/signInPIN"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
         android:fontFamily="sans-serif-black"
-        android:hint="Password"
-        android:inputType="textPassword"
-        android:textSize="40dp"
+        android:hint="PIN"
+        android:inputType="numberPassword"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintBottom_toTopOf="@+id/signInButton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.499"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/signInUsername"
-        app:layout_constraintVertical_bias="0.335" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.751" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/signInButton"
@@ -63,10 +50,10 @@
         app:cornerRadius="24dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.421"
+        app:layout_constraintHorizontal_bias="0.434"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/signInUsername"
-        app:layout_constraintVertical_bias="0.61" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.663" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/createAccountButton"
@@ -82,7 +69,5 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.329"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/signInUsername"
-        app:layout_constraintVertical_bias="0.872" />
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
