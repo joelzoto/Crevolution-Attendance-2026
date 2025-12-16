@@ -17,7 +17,7 @@ import com.google.android.material.button.MaterialButton;
 
 public class CreateAccountActivity extends AppCompatActivity {
 
-    private EditText createAccountUsername, createAccountEmail, createAccountPassword;
+    private EditText pinNumber, firstName, lastName;
     private MaterialButton createAccountButton;
     private ImageView returnButton;
     private FirebaseHelper firebaseHelper;
@@ -34,18 +34,19 @@ public class CreateAccountActivity extends AppCompatActivity {
             return insets;
         });
 
-        createAccountUsername = findViewById(R.id.createAccountUsername);
-        createAccountPassword = findViewById(R.id.createAccountPassword);
+        pinNumber = findViewById(R.id.pinNumber);
         createAccountButton = findViewById(R.id.createAccountButton);
         returnButton = findViewById(R.id.returnButton);
         firebaseHelper = new FirebaseHelper();
+        firstName = findViewById(R.id.firstName);
+        lastName = findViewById(R.id.lastName);
 
         createAccountButton.setOnClickListener(v -> {
-            String username = createAccountUsername.getText().toString();
-            String email = username + "@app.com";
-            String password = createAccountPassword.getText().toString();
+            String username = (firstName.getText().toString() + " " + lastName.getText().toString());
+            String email = pinNumber.getText().toString() + "@app.com";
+            String password = pinNumber.getText().toString();
 
-            if (username.isEmpty() || password.isEmpty()) {
+            if (password.isEmpty()) {
                 Toast.makeText(this, "Fill in all fields", Toast.LENGTH_SHORT).show();
                 return;
             }

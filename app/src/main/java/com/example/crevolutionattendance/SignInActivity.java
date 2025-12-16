@@ -16,7 +16,7 @@ import com.google.android.material.button.MaterialButton;
 
 public class SignInActivity extends AppCompatActivity {
 
-    private EditText signInEmail, signInPassword;
+    private EditText signInPin;
     private MaterialButton signInButton, createAccountButton;
     private FirebaseHelper firebaseHelper;
 
@@ -32,17 +32,16 @@ public class SignInActivity extends AppCompatActivity {
             return insets;
         });
 
-        signInEmail = findViewById(R.id.signInUsername);
-        signInPassword = findViewById(R.id.signInPassword);
+        signInPin = findViewById(R.id.signInPIN);
         signInButton = findViewById(R.id.signInButton);
         createAccountButton = findViewById(R.id.createAccountButton);
         firebaseHelper = new FirebaseHelper();
 
         signInButton.setOnClickListener(v -> {
-            String email = signInEmail.getText().toString() + "@app.com";
-            String password = signInPassword.getText().toString();
+            String email = signInPin.getText().toString() + "@app.com";
+            String password = signInPin.getText().toString();
 
-            if (email.isEmpty() || password.isEmpty()) {
+            if (password.isEmpty()) {
                 Toast.makeText(this, "Fill in all fields", Toast.LENGTH_SHORT).show();
                 return;
             }
